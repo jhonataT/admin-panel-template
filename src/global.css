@@ -17,6 +17,8 @@ body {
     background-color: var(--primary-background);
     color: var(--text-color);
 
+    font-family: 'Ubuntu', sans-serif;
+
     overflow-x: hidden;
 }
 

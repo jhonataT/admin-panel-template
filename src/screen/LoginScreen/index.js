@@ -11,7 +11,7 @@ export const LoginScreen = () => {
         <Card>
             <div className="login__content">
                 <ImageContent imgSrc={logo}/>
-                <h3>FAÇA O LOGIN</h3>
+                <h3>LOGIN</h3>
                 <DefaultInput 
                     label="Email"
                     placeholder="Digite o seu email"
