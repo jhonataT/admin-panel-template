@@ -2,6 +2,8 @@ import { DefaultInput } from "../../components/Input";
 import logo from '../../assets/images/login-image.jpg';
 import { ImageContent } from "../../components/Image";
 import './styles.css';
+import { Link } from "../../components/Link";
+import { DefaultButton } from "../../components/Button";
 
 export const LoginScreen = () => {
     return <main className="login__container">
@@ -19,7 +21,11 @@ export const LoginScreen = () => {
                 handleChange={(value) => console.log(value)}
                 type="password"
             />
-            <a href="/authentication/recovery">Esqueci a minha senha</a>
+            <DefaultButton label="Entrar" handleClick={() => console.log("LOGIN")} />
+            <Link
+                label="Esqueci a minha senha"
+                to="/authentication/recovery"
+            />
         </div>
     </main>
 }

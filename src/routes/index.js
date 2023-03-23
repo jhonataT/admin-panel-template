@@ -11,7 +11,8 @@ export const AllRoutes = createBrowserRouter([
     },
     {
         path: "/",
-        element: <HomeContainer />,
+        element: <LoginContainer />,
+        // element: <HomeContainer />,
         userTypeAccess: null,
         private: false
     },

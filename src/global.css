@@ -8,6 +8,7 @@
     --primary-background: #ebebeb;
     --primary-white: #ffffff;
     --text-color: #595959;
+    --primary-radius: 12px;
 }
 
 body {
