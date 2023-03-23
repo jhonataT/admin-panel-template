@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { HomeContainer } from "../container/HomeContainer";
 import { LoginContainer } from "../container/LoginContainer";
+import { RecoveryContainer } from "../container/RecoveryContainer";
 
 export const AllRoutes = createBrowserRouter([
     {
@@ -16,4 +17,10 @@ export const AllRoutes = createBrowserRouter([
         userTypeAccess: null,
         private: false
     },
+    {
+        path: "/authentication/recovery",
+        element: <RecoveryContainer />,
+        userTypeAccess: null,
+        private: false
+    }
 ]);

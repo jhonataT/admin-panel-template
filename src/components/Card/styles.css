@@ -1,0 +1,23 @@
+.card__container {
+    background-color: var(--primary-white);
+    padding: 100px;
+
+    border-radius: var(--primary-radius);
+    position: relative;
+}
+
+.header__back {
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+.header__back:hover {
+    opacity: .8;
+}
