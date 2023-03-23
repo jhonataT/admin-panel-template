@@ -1,15 +1,15 @@
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { itemList } from '../../routes'; 
+import { Link } from 'react-router-dom';
 import './styles.css';
 
-export const CustomSidebar = () => {
+export const CustomSidebar = ({ title }) => {
     return <div className="sidebar__container">
       <Sidebar className="sidebar__content">
         <Menu>
-          <SubMenu label="Usuários">
-            <MenuItem>Lista</MenuItem>
-            <MenuItem>Cadastro</MenuItem>
-          </SubMenu>
-          <MenuItem>Projetos</MenuItem>
+          {itemList && Array.isArray(itemList) && itemList.map(item => (
+            <MenuItem color='#00000' component={<Link to={item.path} />}>{item.title}</MenuItem>
+          ))}
         </Menu>
       </Sidebar>
     </div>

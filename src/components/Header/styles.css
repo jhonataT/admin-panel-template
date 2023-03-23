@@ -3,7 +3,7 @@
     height: 80px;
 
     background-color: var(--primary-background);
-    background-color: var(--primary-white);
+    /* background-color: var(--primary-white); */
 
     position: fixed;
     top: 0;

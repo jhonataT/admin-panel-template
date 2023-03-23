@@ -1,16 +1,16 @@
 .sidebar__container {
     height: 100%;
-    width: 100px;
 
     background-color: var(--primary-background);
 
     position: fixed;
-    top: 0;
+    top: 80px;
     left: 0;
 
     z-index: 200;
 }
 
 .sidebar__content {
-    background-color: red;
+    background-color: var(--primary-background);
+    opacity: 1;
 }

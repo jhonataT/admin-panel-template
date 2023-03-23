@@ -1,16 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainLayout } from "../components/Layout";
 import { HomeContainer } from "../container/HomeContainer";
 import { LoginContainer } from "../container/LoginContainer";
 import { RecoveryContainer } from "../container/RecoveryContainer";
 import { PrivateRouter } from "./PrivateRouter";
 
-export const AllRoutes = createBrowserRouter([
+export const itemList = [
     {
         path: "/authentication",
         element: <LoginContainer />,
-        userTypeAccess: null,
+        title: "Login",
         private: false,
+        hidden: true,
         children: [
             {
                 path: 'login',
@@ -25,7 +25,11 @@ export const AllRoutes = createBrowserRouter([
     {
         path: "/",
         element: <PrivateRouter><HomeContainer /></PrivateRouter>,
-        userTypeAccess: null,
-        private: true
+        title: "Home",
+        private: true,
+        hidden: true,
     },
-]);
+];
+
+export const AllRoutes = createBrowserRouter(itemList);
+
