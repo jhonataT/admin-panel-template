@@ -1,26 +1,31 @@
 import { createBrowserRouter } from "react-router-dom";
+import { MainLayout } from "../components/Layout";
 import { HomeContainer } from "../container/HomeContainer";
 import { LoginContainer } from "../container/LoginContainer";
 import { RecoveryContainer } from "../container/RecoveryContainer";
+import { PrivateRouter } from "./PrivateRouter";
 
 export const AllRoutes = createBrowserRouter([
     {
-        path: "/authentication/login",
+        path: "/authentication",
         element: <LoginContainer />,
         userTypeAccess: null,
-        private: false
+        private: false,
+        children: [
+            {
+                path: 'login',
+                element: <LoginContainer />,
+            },
+            {
+                path: 'recovery',
+                element: <RecoveryContainer />,
+            }
+        ]
     },
     {
         path: "/",
-        element: <LoginContainer />,
-        // element: <HomeContainer />,
+        element: <PrivateRouter><HomeContainer /></PrivateRouter>,
         userTypeAccess: null,
-        private: false
+        private: true
     },
-    {
-        path: "/authentication/recovery",
-        element: <RecoveryContainer />,
-        userTypeAccess: null,
-        private: false
-    }
 ]);

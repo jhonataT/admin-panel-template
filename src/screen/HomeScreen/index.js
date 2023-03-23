@@ -1,3 +1,5 @@
+import { MainLayout } from "../../components/Layout"
+
 export const HomeScreen = () => {
-    return <>AAAAAVVVVVV</>
+    return <MainLayout>AAAAAVVVVVV</MainLayout>
 }
