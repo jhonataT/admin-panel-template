@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-background: #ebebeb;
+    --primary-white: #ffffff;
+    --text-color: #595959;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-background);
+    color: var(--text-color);
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color);
+}
