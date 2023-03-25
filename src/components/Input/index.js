@@ -6,7 +6,9 @@ export const DefaultInput = ({
     placeholder,
     messageError,
     handleChange,
-    type = 'text'
+    type = 'text',
+    size = 'small',
+    width
 }) => {
     return <div className="input__container">
         <TextField
@@ -17,6 +19,8 @@ export const DefaultInput = ({
             variant="outlined"
             onChange={handleChange}
             type={type}
+            size={size}
+            fullWidth={width}
         />
     </div>
 }
