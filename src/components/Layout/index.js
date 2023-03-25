@@ -3,13 +3,13 @@ import { CustomHeader } from '../Header';
 import { CustomSidebar } from '../Sidebar';
 import './styles.css';
 
-export const MainLayout = ({ children, itemList }) => {
+export const MainLayout = ({ children, itemList, title = "Home" }) => {
     return <main className="main-layout__container">
         <Grid container spacing={0}>
             <Grid item xs={3}>
                 <CustomSidebar {...{itemList}}/>
             </Grid>
-            <CustomHeader />
+            <CustomHeader title={title}/>
             <Grid item xs={8}>
                 <div className="main-layout__content">
                     {children}
