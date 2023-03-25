@@ -1,9 +1,14 @@
 .card__container {
+    width: 100%;
     background-color: var(--primary-white);
-    padding: 100px;
+    padding: 50px;
 
     border-radius: var(--primary-radius);
     position: relative;
+}
+
+.card__container.sm {
+    width: 50%;
 }
 
 .header__back {

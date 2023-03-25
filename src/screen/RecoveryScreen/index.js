@@ -7,7 +7,7 @@ import './styles.css';
 
 export const RecoveryScreen = () => {
     return <main className="recovery__container">
-    <Card hasHeader goToBack="/authentication/login">
+    {/* <Card hasHeader goToBack="/authentication/login"> */}
         <div className="login__content">
             <ImageContent imgSrc={logo}/>
             <h3>Recuperar acesso</h3>
@@ -23,6 +23,6 @@ export const RecoveryScreen = () => {
             />
             <DefaultButton label="Solicitar nova senha" handleClick={() => console.log("RECUPERAR")} />
         </div>
-    </Card>
+    {/* </Card> */}
 </main>
 }

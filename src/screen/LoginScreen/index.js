@@ -8,7 +8,7 @@ import './styles.css';
 
 export const LoginScreen = () => {
     return <main className="login__container">
-        <Card>
+        {/* <Card> */}
             <div className="login__content">
                 <ImageContent imgSrc={logo}/>
                 <h3>LOGIN</h3>
@@ -29,6 +29,6 @@ export const LoginScreen = () => {
                     to="/authentication/recovery"
                 />
             </div>
-        </Card>
+        {/* </Card> */}
     </main>
 }

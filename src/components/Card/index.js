@@ -1,18 +1,21 @@
 import { IoArrowBack } from 'react-icons/io5';
 import './styles.css';
 
-const CardContainer = ({ children }) => (
-    <div className="card__container">{children}</div>
+const CardContainer = ({ children, size, ...props }) => (
+    <div className={"card__container " + `${size === 'sm' ? 'sm' : ''}`}>
+        {children}
+    </div>
 )
 
-export const Card = ({ children, hasHeader, goToBack, ...props }) => {
+export const Card = ({ children, hasHeader, goToBack, size, ...props }) => {
     if(hasHeader) {
-        return <CardContainer>
+        return <CardContainer {...{size}}>
             <header>
                 <a className="header__back" href={goToBack}><IoArrowBack/></a>
             </header>
             {children}
         </CardContainer>
     }
-    return <CardContainer>{children}</CardContainer>
+
+    return <CardContainer {...{size}}>{children}</CardContainer>
 }
