@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { HomeContainer } from "../container/HomeContainer";
 import { LoginContainer } from "../container/LoginContainer";
+import { NewUserContainer } from "../container/NewUserContainer";
 import { RecoveryContainer } from "../container/RecoveryContainer";
 import { UsersContainer } from "../container/UsersContainer";
 import { PrivateRouter } from "./PrivateRouter";
@@ -34,7 +35,7 @@ export const itemList = [
         path: "/dasboard",
         element: <PrivateRouter template="main"><HomeContainer /></PrivateRouter>,
         title: "Dashboard",
-        icon: "IoPieChart",
+        icon: "IoBarChart",
         private: true,
         hidden: false,
     },
@@ -47,10 +48,26 @@ export const itemList = [
         hidden: false,
     },
     {
+        path: "/users/new",
+        element: <PrivateRouter template="main"><NewUserContainer /></PrivateRouter>,
+        title: "Criação de Usuários",
+        icon: "IoPeople",
+        private: true,
+        hidden: true,
+    },
+    {
+        path: "/users/edit/:userId",
+        element: <PrivateRouter template="main"><UsersContainer /></PrivateRouter>,
+        title: "Criação de Usuários",
+        icon: "IoPeople",
+        private: true,
+        hidden: true,
+    },
+    {
         path: "/charts",
         element: <PrivateRouter template="main"><HomeContainer /></PrivateRouter>,
-        title: "Gráficos",
-        icon: "IoBarChart",
+        title: "Importação",
+        icon: "IoCloudUpload",
         private: true,
         hidden: false,
     },
