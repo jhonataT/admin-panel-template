@@ -1,0 +1,7 @@
+.dashboard__container {
+    height: 100vh;
+
+    padding-bottom: 72px;
+    margin-bottom: 72px;
+    overflow-y: auto;
+}
