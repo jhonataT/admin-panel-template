@@ -6,6 +6,9 @@
 
 :root {
     --primary-background: #ebebeb;
+    --secondary-background: #4a6175;
+    --secondary-background-opacity: #d3d4d5;
+    --secondary-background-hover: #354c60;
     --primary-white: #ffffff;
     --text-color: #595959;
     --primary-radius: 12px;
@@ -19,7 +22,7 @@ body {
 
     font-family: 'Ubuntu', sans-serif;
 
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 a {

@@ -7,7 +7,6 @@ import { PrivateRouter } from "./PrivateRouter";
 export const itemList = [
     {
         path: "/authentication",
-        element: <LoginContainer />,
         title: "Login",
         private: false,
         hidden: true,
@@ -26,8 +25,33 @@ export const itemList = [
         path: "/",
         element: <PrivateRouter><HomeContainer /></PrivateRouter>,
         title: "Home",
+        icon: "IoHome",
         private: true,
-        hidden: true,
+        hidden: false,
+    },
+    {
+        path: "/dasboard",
+        element: <PrivateRouter><HomeContainer /></PrivateRouter>,
+        title: "Dashboard",
+        icon: "IoPieChart",
+        private: true,
+        hidden: false,
+    },
+    {
+        path: "/users",
+        element: <PrivateRouter><HomeContainer /></PrivateRouter>,
+        title: "Usuários",
+        icon: "IoPeople",
+        private: true,
+        hidden: false,
+    },
+    {
+        path: "/charts",
+        element: <PrivateRouter><HomeContainer /></PrivateRouter>,
+        title: "Gráficos",
+        icon: "IoBarChart",
+        private: true,
+        hidden: false,
     },
 ];
 
