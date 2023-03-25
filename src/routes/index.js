@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import { DashboardContainer } from "../container/DashboardContainer";
 import { HomeContainer } from "../container/HomeContainer";
 import { LoginContainer } from "../container/LoginContainer";
 import { NewUserContainer } from "../container/NewUserContainer";
@@ -33,7 +34,7 @@ export const itemList = [
     },
     {
         path: "/dasboard",
-        element: <PrivateRouter template="main" title="Dashboard"><HomeContainer /></PrivateRouter>,
+        element: <PrivateRouter template="main" title="Dashboard"><DashboardContainer /></PrivateRouter>,
         title: "Dashboard",
         icon: "IoBarChart",
         private: true,
