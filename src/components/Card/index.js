@@ -6,7 +6,6 @@ const CardContainer = ({ children }) => (
 )
 
 export const Card = ({ children, hasHeader, goToBack, ...props }) => {
-    // console.log("PROPS", props);
     if(hasHeader) {
         return <CardContainer>
             <header>

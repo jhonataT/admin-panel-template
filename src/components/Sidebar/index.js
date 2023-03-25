@@ -10,7 +10,7 @@ import './styles.css';
 const DynamicIoIcon = ({ name }) => {
   const IconComponent = Icons[name];
 
-  if (!IconComponent) { // Return a default one
+  if (!IconComponent) {
     return <Icons.IoHome />;
   }
 
@@ -19,7 +19,6 @@ const DynamicIoIcon = ({ name }) => {
 
 export const CustomSidebar = () => {
   const location = useLocation()
-  console.log("LOCATION", location)
   const { collapseSidebar, toggleSidebar, collapsed, toggled } = useProSidebar();
 
     return <div className="sidebar__container">
@@ -69,6 +68,7 @@ export const CustomSidebar = () => {
                 active={location.pathname === item.path}
                 component={<Link to={item.path}/>}
                 icon={<DynamicIoIcon name={item?.icon}/>}
+                key={item.path}
               >
                 {item.title}
               </MenuItem>

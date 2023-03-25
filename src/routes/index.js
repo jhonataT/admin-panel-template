@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { HomeContainer } from "../container/HomeContainer";
 import { LoginContainer } from "../container/LoginContainer";
 import { RecoveryContainer } from "../container/RecoveryContainer";
+import { UsersContainer } from "../container/UsersContainer";
 import { PrivateRouter } from "./PrivateRouter";
 
 export const itemList = [
@@ -23,7 +24,7 @@ export const itemList = [
     },
     {
         path: "/",
-        element: <PrivateRouter><HomeContainer /></PrivateRouter>,
+        element: <PrivateRouter template="main"><HomeContainer /></PrivateRouter>,
         title: "Home",
         icon: "IoHome",
         private: true,
@@ -31,7 +32,7 @@ export const itemList = [
     },
     {
         path: "/dasboard",
-        element: <PrivateRouter><HomeContainer /></PrivateRouter>,
+        element: <PrivateRouter template="main"><HomeContainer /></PrivateRouter>,
         title: "Dashboard",
         icon: "IoPieChart",
         private: true,
@@ -39,7 +40,7 @@ export const itemList = [
     },
     {
         path: "/users",
-        element: <PrivateRouter><HomeContainer /></PrivateRouter>,
+        element: <PrivateRouter template="main"><UsersContainer /></PrivateRouter>,
         title: "Usuários",
         icon: "IoPeople",
         private: true,
@@ -47,7 +48,7 @@ export const itemList = [
     },
     {
         path: "/charts",
-        element: <PrivateRouter><HomeContainer /></PrivateRouter>,
+        element: <PrivateRouter template="main"><HomeContainer /></PrivateRouter>,
         title: "Gráficos",
         icon: "IoBarChart",
         private: true,
