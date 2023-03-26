@@ -3,8 +3,6 @@ import { Sidebar, Menu, MenuItem, sidebarClasses, useProSidebar } from 'react-pr
 import * as Icons from "react-icons/io5";
 import { itemList } from '../../routes';
 import { Link } from 'react-router-dom';
-import { SquareLogo } from '../Image';
-import logo from '../../assets/images/main-logo.png';
 import './styles.css';
 
 const DynamicIoIcon = ({ name }) => {
@@ -22,7 +20,6 @@ export const CustomSidebar = () => {
   const { collapseSidebar, toggleSidebar, collapsed, toggled } = useProSidebar();
 
     return <div className="sidebar__container">
-      {/* <SquareLogo imgSrc={logo}/> */}
       <Sidebar
         onMouseOver={() => toggleSidebar(!collapsed)}
         onMouseOut={() => toggleSidebar(!collapsed)}
@@ -44,7 +41,6 @@ export const CustomSidebar = () => {
           }}
           menuItemStyles={{
             button: ({ level, active, disabled }) => {
-              // only apply styles on first level elements of the tree
               if (level === 0) {
                 return {
                   width: '200px',
@@ -64,8 +60,9 @@ export const CustomSidebar = () => {
         >
           {itemList && Array.isArray(itemList) && itemList.map(item => {
             if(!item?.hidden) {
+              let rootPath = item.path.split('/')[1] || '';
               return <MenuItem
-                active={location.pathname === item.path}
+                active={location.pathname && location.pathname.includes(rootPath)}
                 component={<Link to={item.path}/>}
                 icon={<DynamicIoIcon name={item?.icon}/>}
                 key={item.path}

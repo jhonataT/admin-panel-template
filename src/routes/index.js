@@ -27,7 +27,15 @@ export const itemList = [
         ]
     },
     {
-        path: "/",
+        path: "*",
+        element: <LoginContainer />,
+        title: "404",
+        icon: "IoHome",
+        private: true,
+        hidden: true,
+    },
+    {
+        path: "/home",
         element: <PrivateRouter template="main" title="Home"><HomeContainer /></PrivateRouter>,
         title: "Home",
         icon: "IoHome",
