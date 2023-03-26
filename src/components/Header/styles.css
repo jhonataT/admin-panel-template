@@ -1,7 +1,7 @@
 .header__container {
     width: 80%;
     height: 80px;
-    background-color: var(--secondary-background-opacity);
+    background-color: var(--primary-background);
 
     position: fixed;
     top: 0;
