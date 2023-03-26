@@ -1,3 +1,10 @@
 .new-projects__container {
+  padding-bottom: 0 !important
+}
 
+.buttons__container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  gap: 20px
 }
