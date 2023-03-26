@@ -33,6 +33,7 @@ ChartJS.register(
 export const BarChart = ({ data, multi }) => {
   return <div className="chart__container">
     <Bar
+      height={"250px"}
       options={multi ? multi_bar_options : bar_options}
       data={multi ? multi_bar_data : mock_bar_data}
     />
@@ -40,28 +41,41 @@ export const BarChart = ({ data, multi }) => {
 }
 
 export const DonutChart = ({ data }) => {
-  return <Doughnut
-    data={donut_data}
-    options={donut_options}
-  />
+  return <div className="chart__container">
+    <Doughnut
+      height={"500px"}
+      data={donut_data}
+      options={donut_options}
+    />
+  </div>
 }
 
 export const PieChart = ({ data }) => {
-  return <Pie
-    data={pie_data}
-    options={pie_options}
-  />
+  return <div className="chart__container">
+    <Pie
+      height={"500px"}
+      data={pie_data}
+      options={pie_options}
+    />
+  </div>
 }
 
 export const AreaChart = ({ data }) => {
   return <div className="chart__container">
-    <Line options={area_options} data={area_data} />
+    <Line
+      height={"250px"}
+      options={area_options}
+      data={area_data}
+    />
   </div>
 }
 
 export const RadarChart = ({ data }) => {
   return <div className="chart__container">
-    <Radar data={radar_data} options={radar_options} />
+    <Radar
+      data={radar_data}
+      options={radar_options}
+    />
   </div>
 }
 

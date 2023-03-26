@@ -17,7 +17,7 @@ export const DashboardScreen = () => {
                 </Card>
             </Grid>
             <Grid item xs={6}>
-                <Card>
+                <Card flex >
                     <Charts type="donut"/>
                 </Card>
             </Grid>

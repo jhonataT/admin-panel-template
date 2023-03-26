@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import { DefaultButton } from '../../components/Button';
-import { Card } from "../../components/Card"
-import { DefaultInput } from "../../components/Input"
+import { Card } from "../../components/Card";
+import { DefaultInput } from "../../components/Input";
 
 export const NewProjectsScreen = () => {
   return <div className="new-projects__container">

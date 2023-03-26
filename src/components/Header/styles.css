@@ -1,5 +1,5 @@
 .header__container {
-    width: 80%;
+    width: 75%;
     height: 80px;
     background-color: var(--primary-background);
 
@@ -7,7 +7,9 @@
     top: 0;
     right: 0;
 
-    padding: 0 64px;
+    z-index: -20;
+
+    padding: 0 20px 0 0;
 
     display: flex;
     align-items: center;

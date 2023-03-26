@@ -6,6 +6,7 @@ import { NewProjectsContainer } from "../container/NewProjectsContainer";
 import { NewUserContainer } from "../container/NewUserContainer";
 import { ProjectsContainer } from "../container/ProjectsContainer";
 import { RecoveryContainer } from "../container/RecoveryContainer";
+import { SettingsContainer } from "../container/SettingsContainer";
 import { UsersContainer } from "../container/UsersContainer";
 import { PrivateRouter } from "./PrivateRouter";
 
@@ -91,10 +92,18 @@ export const itemList = [
         hidden: true,
     },
     {
-        path: "/charts",
+        path: "/imports",
         element: <PrivateRouter template="main" title="Importação de dados"><HomeContainer /></PrivateRouter>,
         title: "Importação",
         icon: "IoCloudUpload",
+        private: true,
+        hidden: false,
+    },
+    {
+        path: "/settings",
+        element: <PrivateRouter template="main" title="Configurações"><SettingsContainer /></PrivateRouter>,
+        title: "Configurações",
+        icon: "IoSettings",
         private: true,
         hidden: false,
     },

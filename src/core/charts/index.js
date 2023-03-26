@@ -19,7 +19,7 @@ export const mock_bar_data = {
 };
 
 export const bar_options = {
-  responsive: true,
+  responsive: false,
   plugins: {
     legend: {
       position: 'bottom',
@@ -32,7 +32,7 @@ export const bar_options = {
 };
 
 export const area_options = {
-  responsive: true,
+  responsive: false,
   plugins: {
     legend: {
       position: 'bottom',
@@ -58,8 +58,8 @@ export const area_data = {
 };
 
 export const donut_options = {
-  responsive: true,
-  maintainAspectRatio: true,
+  responsive: false,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       position: 'bottom',
@@ -92,8 +92,8 @@ export const donut_data = {
 };
 
 export const pie_options = {
-  responsive: true,
-  maintainAspectRatio: true,
+  responsive: false,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       position: 'bottom',
@@ -153,7 +153,7 @@ export const multi_bar_options = {
       position: 'bottom',
     },
   },
-  responsive: true,
+  responsive: false,
   interaction: {
     mode: 'index',
     intersect: false,
