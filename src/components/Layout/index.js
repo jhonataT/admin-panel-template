@@ -5,12 +5,12 @@ import './styles.css';
 
 export const MainLayout = ({ children, itemList, title = "Home" }) => {
     return <main className="main-layout__container">
-        <Grid container spacing={0}>
-            <Grid item xs={3}>
+        <Grid container >
+            <Grid item xs="3">
                 <CustomSidebar {...{itemList}}/>
             </Grid>
-            <CustomHeader title={title}/>
-            <Grid item xs={8}>
+            <Grid item xs="9">
+                <CustomHeader title={title}/>
                 <div className="main-layout__content">
                     {children}
                 </div>

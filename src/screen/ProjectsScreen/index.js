@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import { Card } from "../../components/Card"
 import { SubHeader } from "../../components/SubHeader"
 import { DefaultTable } from "../../components/Table"
 import './styles.css'
@@ -8,11 +9,11 @@ export const ProjectsScreen = ({data}) => {
 
   const buttons = [
     {
-        title: 'Novo Projeto',
-        onClick: () => navigate('/projects/new'),
-        type: 'contained',
-        color: "primary",
-        fullWidth: false
+      title: 'Novo Projeto',
+      onClick: () => navigate('/projects/new'),
+      type: 'contained',
+      color: "primary",
+      fullWidth: false
     }
   ]
   return <div className="projects__container">

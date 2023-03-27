@@ -9,11 +9,11 @@ export const UserProfile = ({ userName = 'usuário', userImage }) => {
             <Avatar 
                 alt={userName}
                 src={userImage}
-                sx={{ width: 44, height: 44 }}    
+                sx={{ width: 36, height: 36 }}    
             /> :
             <Avatar
                 {...stringAvatar(userName)}
-                sx={{ width: 44, height: 44 }}    
+                sx={{ width: 36, height: 36 }}    
             />
         }
         

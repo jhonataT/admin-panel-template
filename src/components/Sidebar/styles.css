@@ -2,9 +2,24 @@
     height: 100vh;
     width: fit-content;
 
-    background-color: var(--secondary-background-opacity);
-
-    margin-top: 80px;
+    background-color: var(--primary-white);
 
     z-index: 200;
+}
+
+.sidebar__content {
+    border: none !important;
+}
+
+.sidebar-header__container {
+    height: 80px;
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header__container .sidebar-header--icon {
+    cursor: pointer;
+    color: var(--secondary-background);
 }

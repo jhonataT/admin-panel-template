@@ -7,7 +7,7 @@
 :root {
     --primary-background: #ebebeb;
     --secondary-background: #4a6175;
-    --secondary-background-opacity: #ebebeb;
+    --gray-opacity: #354c609a;
     --secondary-background-hover: #354c60;
     --primary-white: #ffffff;
     --text-color: #595959;
@@ -17,10 +17,11 @@
 body {
     width: 100vw;
     height: 100vh;
+
     background-color: var(--primary-background);
     color: var(--text-color);
 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
     overflow: hidden;
 }

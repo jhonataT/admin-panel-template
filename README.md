@@ -14,13 +14,15 @@
 
 | Description                           | Checkmark               |
 | -----------------------------------   | ----------------------- |
-| Módulo Dashboard (adicionar gráficos) |        :clock2:         |
+| Módulo Dashboard (adicionar gráficos) |:heavy_check_mark:       |
 | Criação de usuários (adicionar inputs)|                         |
 | Edição de usuários                    |                         |
 | Lista de projetos                     |    :heavy_check_mark:   |
 | Criação de projetos                   |        :clock2:         |
 | Edição de projetos                    |                         |
 | Módulo de importação                  |                         |
+| Manter item da sidebar selecionado e rotas derivadas |:heavy_check_mark:|
+| Ajustar toggle da sidebar             |:clock2:|
 
 
 
