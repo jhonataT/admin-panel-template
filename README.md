@@ -22,7 +22,8 @@
 | Edição de projetos                    |                         |
 | Módulo de importação                  |                         |
 | Manter item da sidebar selecionado e rotas derivadas |:heavy_check_mark:|
-| Ajustar toggle da sidebar             |:clock2:|
+| Ajustar toggle da sidebar             |:heavy_check_mark: |
+| Finalizar tela de configurações       |:heavy_check_mark: |
 
 
 

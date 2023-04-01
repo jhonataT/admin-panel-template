@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import { DashboardContainer } from "../container/DashboardContainer";
 import { HomeContainer } from "../container/HomeContainer";
 import { LoginContainer } from "../container/LoginContainer";
@@ -29,7 +29,7 @@ export const itemList = [
     },
     {
         path: "*",
-        element: <LoginContainer />,
+        element: <Navigate to="/home" />,
         title: "404",
         icon: "IoHome",
         private: true,
