@@ -16,7 +16,7 @@
 | -----------------------------------   | ----------------------- |
 | Módulo Dashboard (adicionar gráficos) |:heavy_check_mark:       |
 | Criação de usuários (adicionar inputs)|                         |
-| Edição de usuários                    |                         |
+| Edição de usuários                    |        :clock2:         |
 | Lista de projetos                     |    :heavy_check_mark:   |
 | Criação de projetos                   |        :clock2:         |
 | Edição de projetos                    |                         |

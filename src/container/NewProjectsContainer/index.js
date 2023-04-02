@@ -1,5 +1,10 @@
+import { useNavigate } from "react-router-dom"
 import { NewProjectsScreen } from "../../screen/NewProjectsScreen"
 
 export const NewProjectsContainer = () => {
-  return <NewProjectsScreen />
+  const navigate = useNavigate()
+
+  const cancelButton = () => navigate("/projects")
+
+  return <NewProjectsScreen {...{cancelButton}}/>
 }

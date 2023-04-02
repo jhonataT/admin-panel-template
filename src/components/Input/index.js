@@ -10,7 +10,8 @@ export const DefaultInput = ({
     type = 'text',
     size = 'small',
     width,
-    helperText
+    helperText,
+    select
 }) => {
     return <div className="input__container">
         <TextField
@@ -24,6 +25,7 @@ export const DefaultInput = ({
             size={size}
             fullWidth={width}
             helperText={helperText}
+            select={select}
         />
     </div>
 }
