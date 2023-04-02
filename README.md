@@ -26,6 +26,8 @@
 | Finalizar tela de configurações       |:heavy_check_mark: |
 | Apresentação na tela home       |:heavy_check_mark: |
 | Ajustes no grid do template principal       |:heavy_check_mark: |
+| Ajustes na responsividade       |                               |
+| Adicionar cliq in row nas tabelas para ir à tela de edição       |                               |
 
 
 
