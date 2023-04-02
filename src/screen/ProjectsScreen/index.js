@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom"
-import { Card } from "../../components/Card"
 import { SubHeader } from "../../components/SubHeader"
 import { DefaultTable } from "../../components/Table"
 import './styles.css'

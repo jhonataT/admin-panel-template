@@ -6,6 +6,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@faker-js/faker": "^7.6.0",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@mui/material": "^5.11.14",
     "@nadavshaar/react-grid-table": "^1.1.2",
     "chart.js": "^4.2.1",

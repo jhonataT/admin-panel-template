@@ -1,0 +1,26 @@
+.home-card__container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.lottie__container {
+    width: 50%;
+    height: 100%;
+}
+
+.links__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.link__content {
+    display: flex;
+    align-items: center;
+}
+
+.link__content a {
+    margin-left: 10px;
+}
+

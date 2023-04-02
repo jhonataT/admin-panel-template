@@ -9,7 +9,7 @@ const CardContainer = ({ children, size, ...props }) => (
 
 export const Card = ({ children, hasHeader, goToBack, size, ...props }) => {
     if(hasHeader) {
-        return <CardContainer {...{size}}>
+        return <CardContainer {...{size}} {...props}>
             <header>
                 <a className="header__back" href={goToBack}><IoArrowBack/></a>
             </header>
