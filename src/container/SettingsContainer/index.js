@@ -2,7 +2,7 @@ import { SettingsScreen } from "../../screen/SettingsScreen";
 
 const settingOptions = [
     {
-        step: "Usuário logado",
+        step: "Configurações do Usuário",
         children: [
             {
                 label: "Salvar login",
@@ -17,7 +17,7 @@ const settingOptions = [
         ]
     },
     {
-        step: "Plataforma",
+        step: "Configurações de Layout",
         children: [
             {
                 label: "Tema light",
