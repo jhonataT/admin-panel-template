@@ -45,7 +45,7 @@ export const CustomSidebar = () => {
         rootStyles={{
           [`.${sidebarClasses.container}`]: {
             backgroundColor: 'transparent',
-            color: 'var(--primary-white)',
+            color: 'var( --dark-card-background)',
             padding: '12px',
           },
         }}
@@ -59,13 +59,13 @@ export const CustomSidebar = () => {
                 return {
                   borderRadius: '12px',
                   marginTop: '15px',
-                  backgroundColor: active ? collapsed ? 'transparent' : 'var(--secondary-background-hover)' : 'tranparent',
+                  backgroundColor: active ? collapsed ? 'transparent' : 'var(--dark-menu-hover-color)' : 'tranparent',
                   transition: 'all .2s',
                   fontSize: '18px',
-                  color: active ? collapsed ? 'var(--gray-opacity)' : 'var(--primary-background)' : 'var(--secondary-background)',
+                  color: active ? collapsed ? 'var(--dark-icon-color)' : 'var(--dark-text-hover-color)' : 'var(--dark-menu-text-color)',
                   '&:hover': {
-                    color: collapsed ? 'var(--gray-opacity)' : 'var(--primary-background)',
-                    backgroundColor: collapsed ? 'transparent' : 'var(--secondary-background-hover)',
+                    color: collapsed ? 'var(--dark-icon-color)' : 'var(--dark-text-hover-color)',
+                    backgroundColor: collapsed ? 'transparent' : 'var(--dark-menu-hover-color)',
                   },
                 };
               }

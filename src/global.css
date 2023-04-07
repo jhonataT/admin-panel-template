@@ -1,3 +1,5 @@
+/* https://br.pinterest.com/pin/294352525652340482/ */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,28 +7,24 @@
 }
 
 :root {
-    --primary-background: #ffffff;
-    --secondary-background: #4a6175;
-    --gray-opacity: #354c609a;
-    --secondary-background-hover: #354c60;
-    --primary-white: #ffffff;
-    --text-color: #595959;
+    /* DARK THEME */
+    --dark-background: #2a2e36;
+    --dark-menu-text-color: #cfcdcd;
+    --dark-text-hover-color: #ffffff;
+    --dark-icon-color: #ffffff;
+    --dark-menu-hover-color: #343842;
+    --dark-card-background: #343842;
+    --dark-border-color: #343842;
 
-    /* --primary-background: #ebebeb;
-    --secondary-background: #4a6175;
-    --gray-opacity: #354c609a;
-    --secondary-background-hover: #354c60;
-    --primary-white: #ffffff;
-    --text-color: #595959; */
-    --primary-radius: 12px;
+    --default-radius: 12px;
 }
 
 body {
     width: 100vw;
     height: 100vh;
 
-    background-color: var(--primary-background);
-    color: var(--text-color);
+    background-color: var(--dark-background);
+    color: #ffff;
 
     font-family: 'Roboto', sans-serif;
 
@@ -36,5 +34,5 @@ body {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--text-color);
+    color: #ffff;
 }

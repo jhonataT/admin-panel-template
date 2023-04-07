@@ -2,8 +2,7 @@
     height: 100vh;
     width: fit-content;
 
-    background-color: var(--primary-white);
-    box-shadow: 9px 0px 28px -15px rgba(0,0,0,0.10);
+    border-right: 1px solid var(--dark-border-color);
 
     z-index: 200;
 }
@@ -22,5 +21,5 @@
 
 .sidebar-header__container .sidebar-header--icon {
     cursor: pointer;
-    color: var(--secondary-background);
+    color: var(--dark-icon-color);
 }

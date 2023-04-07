@@ -10,10 +10,10 @@ export const CustomHeader = ({ title }) => {
             <h1>{title}</h1>
         </div>
         <div className="header-profile__content">
-            <Badge badgeContent={2} color="primary" className='icon'>
+            <Badge badgeContent={2} color="primary" className='icon notification'>
                 <IoNotificationsSharp size={24}/>
             </Badge>
-            <Badge badgeContent={0} color="primary" className='icon'>
+            <Badge badgeContent={0} color="primary" className='icon settings'>
                 <IoSettings size={24}/>
             </Badge>
             <UserProfile userName="Jhonata" userImage={userImage} />

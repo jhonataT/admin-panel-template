@@ -1,12 +1,29 @@
 .card__container {
     width: 100%;
-    background-color: var(--primary-white);
+    background-color: var( --dark-card-background);
     padding: 50px;
 
-    border-radius: var(--primary-radius);
+    border-radius: var(--default-radius);
     position: relative;
 
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.15);
+    /* box-shadow: 0px 0px 15px 0px rgba(4, 4, 4, 0.15); */
+
+   
+}
+
+.card__container:before {
+    content: "";
+    z-index: -1;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* background: linear-gradient(-45deg, #ff3d00 1%, #0400ff 96% ); */
+    /* transform: translate3d(0px, 0px, 0) scale(1); */
+    /* filter: blur(10px); */
 }
 
 .card__container.sm {
@@ -28,3 +45,20 @@
 .header__back:hover {
     opacity: .8;
 }
+
+/* 
+.box:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    opacity: var(0.16);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+} */
+
+        

@@ -1,11 +1,14 @@
 .header__container {
     width: 100%;
     height: 80px;
-    background-color: var(--primary-background);
+    background-color: var(--dark-background);
+    background-color: transparent;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-bottom: 30px;
 }
 
 .header__title {
@@ -14,8 +17,6 @@
 
     font-size: 14px;
     font-weight: 400;
-
-    color: var(--secondary-background);
 }
 
 .header-profile__content {
@@ -26,9 +27,53 @@
 .header-profile__content .icon {
     margin-right: 24px;
     cursor: pointer;
-    transition: opacity .3s;
+    transition: all .4s;
+    color: var(--dark-icon-color);
 }
 
-.header-profile__content .icon:hover {
+.header-profile__content .icon.notification {
+    animation: shake 8s infinite;
+    animation-delay: 3s;
+}
+
+.header-profile__content .icon.notification:hover {
     opacity: .6;
 }
+
+.header-profile__content .icon.settings:hover {
+    opacity: .6;
+    transform: rotate(50deg);
+}
+
+@keyframes shake {
+    25%,
+    83%,
+    100% {
+        transform: rotatez(0deg);
+    }
+    4%,
+    10% {
+        transform: rotatez(-5deg);
+    }
+    7%,
+    13% {
+        transform: rotatez(5deg);
+    }
+}
+
+/* @keyframes shake {
+    0%,
+    25%,
+    83%,
+    100% {
+        transform: rotatez(0deg);
+    }
+    32.5%,
+    62.5% {
+        transform: rotatez(-5deg);
+    }
+    47.5%,
+    75.5% {
+        transform: rotatez(5deg);
+    }
+} */
