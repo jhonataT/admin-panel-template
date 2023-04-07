@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import { Sidebar, Menu, MenuItem, sidebarClasses, useProSidebar } from 'react-pro-sidebar';
 import * as Icons from "react-icons/io5";
-import { CgMenuMotion } from 'react-icons/cg';
+import { RxHamburgerMenu } from 'react-icons/rx';
 import { itemList } from '../../routes';
 import { Link } from 'react-router-dom';
 import { Box, Typography } from '@mui/material';
@@ -34,8 +34,8 @@ export const CustomSidebar = () => {
 
     return <div className="sidebar__container">
       <Box className="sidebar-header__container">
-        <CgMenuMotion
-          size={48}
+        <RxHamburgerMenu
+          size={36}
           className="sidebar-header--icon"
           onClick={() => collapseSidebar(!collapsed)}
         />
