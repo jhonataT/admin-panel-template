@@ -2,3 +2,40 @@
     display: flex;
     align-items: center;
 }
+
+.toggle-theme__container {
+    width: 45px;
+    height: 16px;
+    /* background-color: var(--card-background); */
+    border: 1px solid var(--border-color);
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    position: relative;
+    transform: scale(1.5);
+}
+
+.light-theme__container {
+    color: var(--default-yellow);
+}
+
+.dark-theme__container {
+    color: var(--default-red);
+}
+
+.white-ball {
+    width: 15px;
+    height: 15px;
+    background-color: var(--title-color);
+    position: absolute;
+    top: 2.45px;
+    left: 2.5px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.white-ball.light {
+    transform: translateX(22px);
+}

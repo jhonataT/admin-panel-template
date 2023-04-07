@@ -3,6 +3,7 @@ import { Badge } from '@mui/material';
 import { UserProfile } from '../UserProfile';
 import userImage from '../../assets/images/login-image.jpg';
 import './styles.css';
+import { ToggleThemeMode } from '../Toggle';
 
 export const CustomHeader = ({ title }) => {
     return <header className="header__container">
@@ -10,13 +11,16 @@ export const CustomHeader = ({ title }) => {
             <h1>{title}</h1>
         </div>
         <div className="header-profile__content">
+            <div className='icon'>
+                <ToggleThemeMode />
+            </div>
             <Badge badgeContent={2} color="primary" className='icon notification'>
                 <IoNotificationsSharp size={24}/>
             </Badge>
-            <Badge badgeContent={0} color="primary" className='icon settings'>
+            {/* <Badge badgeContent={0} color="primary" className='icon settings'>
                 <IoSettings size={24}/>
-            </Badge>
-            <UserProfile userName="Jhonata" userImage={userImage} />
+            </Badge> */}
+            <UserProfile userName="Jhonata Tenório" userImage={userImage} />
         </div>
     </header>
 }

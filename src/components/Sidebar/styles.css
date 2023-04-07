@@ -2,7 +2,7 @@
     height: 100vh;
     width: fit-content;
 
-    border-right: 1px solid var(--dark-border-color);
+    border-right: 1px solid var(--border-color);
 
     z-index: 200;
 }
@@ -21,5 +21,5 @@
 
 .sidebar-header__container .sidebar-header--icon {
     cursor: pointer;
-    color: var(--dark-icon-color);
+    color: var(--icon-color);
 }

@@ -1,7 +1,7 @@
 .header__container {
     width: 100%;
     height: 80px;
-    background-color: var(--dark-background);
+    background-color: var(--default-background);
     background-color: transparent;
 
     display: flex;
@@ -28,7 +28,7 @@
     margin-right: 24px;
     cursor: pointer;
     transition: all .4s;
-    color: var(--dark-icon-color);
+    color: var(--icon-color);
 }
 
 .header-profile__content .icon.notification {

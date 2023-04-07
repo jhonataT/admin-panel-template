@@ -41,11 +41,12 @@ export const CustomSidebar = () => {
         />
       </Box>
       <Sidebar
+        defaultCollapsed
         transitionDuration={500}
         rootStyles={{
           [`.${sidebarClasses.container}`]: {
             backgroundColor: 'transparent',
-            color: 'var( --dark-card-background)',
+            color: 'var( --card-background)',
             padding: '12px',
           },
         }}
@@ -59,13 +60,13 @@ export const CustomSidebar = () => {
                 return {
                   borderRadius: '12px',
                   marginTop: '15px',
-                  backgroundColor: active ? collapsed ? 'transparent' : 'var(--dark-menu-hover-color)' : 'tranparent',
+                  backgroundColor: active ? collapsed ? 'transparent' : 'var(--menu-hover-color)' : 'tranparent',
                   transition: 'all .2s',
                   fontSize: '18px',
-                  color: active ? collapsed ? 'var(--dark-icon-color)' : 'var(--dark-text-hover-color)' : 'var(--dark-menu-text-color)',
+                  color: active ? collapsed ? 'var(--icon-color)' : 'var(--text-hover-color)' : 'var(--menu-text-color)',
                   '&:hover': {
-                    color: collapsed ? 'var(--dark-icon-color)' : 'var(--dark-text-hover-color)',
-                    backgroundColor: collapsed ? 'transparent' : 'var(--dark-menu-hover-color)',
+                    color: collapsed ? 'var(--icon-color)' : 'var(--text-hover-color)',
+                    backgroundColor: collapsed ? 'transparent' : 'var(--menu-hover-color)',
                   },
                 };
               }

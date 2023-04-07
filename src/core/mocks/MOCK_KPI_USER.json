@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Usuários logados",
+        "value": "2300",
+        "backgroundColor": "var(--default-blue)",
+        "icon": "HiUserGroup"
+    },
+    {
+        "title": "Projetos ativos",
+        "value": "235",
+        "backgroundColor": "var(--default-yellow)",
+        "icon": "ComponentIcon"
+    },
+    {
+        "title": "Eventos semanais",
+        "value": "5467",
+        "backgroundColor": "var(--default-red)",
+        "icon": "HiChatAlt2"
+    }
+]

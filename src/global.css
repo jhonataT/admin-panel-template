@@ -1,5 +1,3 @@
-/* https://br.pinterest.com/pin/294352525652340482/ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,32 +5,75 @@
 }
 
 :root {
-    /* DARK THEME */
-    --dark-background: #2a2e36;
-    --dark-menu-text-color: #cfcdcd;
-    --dark-text-hover-color: #ffffff;
-    --dark-icon-color: #ffffff;
-    --dark-menu-hover-color: #343842;
-    --dark-card-background: #343842;
-    --dark-border-color: #343842;
-
     --default-radius: 12px;
+
+    --default-yellow: #ffcc33;
+    --default-red: #e55e48;
+    --default-blue: #0fccce;
+
+    /* LIGHT THEME */
+    --default-background: #eeeef0;
+    --card-background: #ffffff;
+    --title-color: #6f87aa;
+    --menu-text-color: #6f87aa;
+    --icon-color: #6f87aac0;
+    --border-color: #6f87aa3e;
+    --menu-hover-color: #6f87aac0;
+    --text-hover-color: #ffffff;
+    
+    background-color: var(--default-background);
+    color: var(--title-color);
+}
+
+:root .dark-theme {
+    /* DARK THEME */
+    --default-background: #2a2e36;
+    --menu-text-color: #cfcdcd;
+    --text-hover-color: #ffffff;
+    --icon-color: #ffffff;
+    --menu-hover-color: #343842;
+    --card-background: #343842;
+    --border-color: #343842;
+    --title-color: #ffffff;
+
+    background-color: var(--default-background);
+    color: var(--title-color);
 }
 
 body {
     width: 100vw;
     height: 100vh;
 
-    background-color: var(--dark-background);
-    color: #ffff;
-
     font-family: 'Roboto', sans-serif;
-
     overflow: hidden;
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #ffff;
+    color: var(--title-color);
 }
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--card-background);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--default-background);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+}
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }

@@ -22,5 +22,11 @@
 
 .link__content a {
     margin-left: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.link__content a:hover {
+    opacity: .8;
 }
 
