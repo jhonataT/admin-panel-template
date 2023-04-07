@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { Card } from '@mui/material';
 import { SubHeader } from '../../components/SubHeader';
 import { DefaultTable } from '../../components/Table';
 import './styles.css';
@@ -18,7 +19,9 @@ export const UsersScreen = ({ data }) => {
     ]
 
     return <div className="users__container">
-        <SubHeader {...{buttons}}/>
-        <DefaultTable {...{data}} />
+        <Card variant="outlined">
+            <SubHeader {...{buttons}}/>
+            <DefaultTable {...{data}} />
+        </Card> 
     </div>
 }

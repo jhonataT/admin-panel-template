@@ -5,12 +5,19 @@
 }
 
 :root {
-    --primary-background: #ebebeb;
+    --primary-background: #ffffff;
     --secondary-background: #4a6175;
     --gray-opacity: #354c609a;
     --secondary-background-hover: #354c60;
     --primary-white: #ffffff;
     --text-color: #595959;
+
+    /* --primary-background: #ebebeb;
+    --secondary-background: #4a6175;
+    --gray-opacity: #354c609a;
+    --secondary-background-hover: #354c60;
+    --primary-white: #ffffff;
+    --text-color: #595959; */
     --primary-radius: 12px;
 }
 

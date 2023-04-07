@@ -5,7 +5,7 @@ import './styles.css';
 
 export const DashboardScreen = () => {
     return <div className="dashboard__container">
-        <Grid container spacing={2}>
+        <Grid container spacing={2.5} padding={3}>
             <Grid item xs={6}>
                 <Card>
                     <Charts type="bar"/>

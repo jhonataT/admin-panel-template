@@ -21,6 +21,7 @@ export const DefaultTable = ({ data }) => {
             id,
             field: labelColumn,
             label: labelColumn,
+            width: '190px'
         }))
     )
 

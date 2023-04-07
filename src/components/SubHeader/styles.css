@@ -4,9 +4,5 @@
     align-items: center;
     justify-content: flex-end;
 
-    margin-bottom: 15px;
-}
-
-.sub-header__content {
-
+    padding: 20px;
 }

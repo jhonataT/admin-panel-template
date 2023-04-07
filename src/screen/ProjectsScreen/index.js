@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { SubHeader } from "../../components/SubHeader"
 import { DefaultTable } from "../../components/Table"
+import { Card } from "@mui/material"
 import './styles.css'
 
 export const ProjectsScreen = ({data}) => {
@@ -16,7 +17,9 @@ export const ProjectsScreen = ({data}) => {
     }
   ]
   return <div className="projects__container">
-    <SubHeader {...{buttons}}/>
-    <DefaultTable {...{data}} />
+    <Card variant="outlined">
+      <SubHeader {...{buttons}}/>
+      <DefaultTable {...{data}} />
+    </Card>
   </div>
 }
