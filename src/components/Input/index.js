@@ -1,4 +1,5 @@
 import { TextField } from "@mui/material";
+// import { DatePicker } from "@mui/x-date-pickers";
 import './styles.css';
 
 export const DefaultInput = ({
@@ -8,7 +9,9 @@ export const DefaultInput = ({
     handleChange,
     type = 'text',
     size = 'small',
-    width
+    width,
+    helperText,
+    select
 }) => {
     return <div className="input__container">
         <TextField
@@ -21,6 +24,8 @@ export const DefaultInput = ({
             type={type}
             size={size}
             fullWidth={width}
+            helperText={helperText}
+            select={select}
         />
     </div>
 }

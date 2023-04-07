@@ -1,3 +1,10 @@
 .new-user__container {
     
 }
+
+buttons__container{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  gap: 20px
+}
