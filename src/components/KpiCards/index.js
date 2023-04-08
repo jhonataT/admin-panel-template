@@ -1,8 +1,7 @@
 import * as Icons from "react-icons/hi";
-import data from '../../core/mocks/MOCK_KPI_USER.json';
 import './styles.css';
 
-export const KpiCards = () => {
+export const KpiCards = ({ data }) => {
     return <div className="kpi__container">
         {
             Array.isArray(data) && data.map( kpi => {

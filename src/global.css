@@ -15,6 +15,7 @@
     --default-background: #eeeef0;
     --card-background: #ffffff;
     --title-color: #6f87aa;
+    --chart-color: #000;
     --menu-text-color: #6f87aa;
     --icon-color: #6f87aac0;
     --border-color: #6f87aa3e;
@@ -30,6 +31,7 @@
     --menu-text-color: #cfcdcd;
     --text-hover-color: #ffffff;
     --icon-color: #ffffff;
+    --chart-color: #ffff;
     --menu-hover-color: #343842;
     --card-background: #343842;
     --border-color: #343842;

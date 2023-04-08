@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Consumo total",
+        "value": "3.123 Un",
+        "backgroundColor": "var(--default-blue)",
+        "icon": "HiOutlineSwitchVertical"
+    },
+    {
+        "title": "Maior consumidor",
+        "value": "Andorra",
+        "backgroundColor": "var(--default-yellow)",
+        "icon": "HiOutlineShoppingCart"
+    },
+    {
+        "title": "Maior produto",
+        "value": "Burger",
+        "backgroundColor": "var(--default-red)",
+        "icon": "HiOutlineTrendingUp"
+    }
+]

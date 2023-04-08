@@ -1,12 +1,13 @@
 .toggle__container {
     display: flex;
     align-items: center;
+
+    color: var(--title-color);
 }
 
 .toggle-theme__container {
     width: 45px;
     height: 16px;
-    /* background-color: var(--card-background); */
     border: 1px solid var(--border-color);
     display: flex;
     border-radius: 50px;
@@ -18,11 +19,11 @@
 }
 
 .light-theme__container {
-    color: var(--default-yellow);
+    color: var(--default-red);
 }
 
 .dark-theme__container {
-    color: var(--default-red);
+    color: var(--default-yellow);
 }
 
 .white-ball {

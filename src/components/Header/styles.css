@@ -11,6 +11,8 @@
 
     margin-bottom: 30px;
     color: var(--title-color);
+
+    position: relative;
 }
 
 .header__title {
@@ -31,6 +33,8 @@
     cursor: pointer;
     transition: all .4s;
     color: var(--icon-color);
+
+    user-select: none;
 }
 
 .header-profile__content .icon.notification {

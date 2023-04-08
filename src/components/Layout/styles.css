@@ -1,6 +1,6 @@
 .main-layout__container {
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
 
     display: flex;
 }
@@ -8,13 +8,12 @@
 .main-layout__content-header {
     height: 100vh;
     width: 100%;
-    
+
     display: flex;
     flex-direction: column;
 }
 
 .main-layout__content {
-    width: 100%;
     padding: 0 45px;
     overflow-y: auto;
 }

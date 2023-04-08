@@ -3,13 +3,14 @@ import { Typography } from "@mui/material";
 import { Player } from '@lottiefiles/react-lottie-player';
 import { Card } from "../../components/Card";
 import { Link } from "../../components/Link";
-import homeLottie from '../../assets/lotties/home.json';
-import './styles.css';
 import { KpiCards } from "../../components/KpiCards";
+import homeLottie from '../../assets/lotties/home.json';
+import kpiData from '../../core/mocks/MOCK_KPI_USER.json';
+import './styles.css';
 
 export const HomeScreen = ({ links }) => {
   return <div>
-    <KpiCards />
+    <KpiCards data={kpiData}/>
     <Card>
       <div className="home-card__container">
         <div className="lottie__container">

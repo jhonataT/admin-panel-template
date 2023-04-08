@@ -17,12 +17,11 @@ const axisLeft = {
   legend: 'food',
   legendPosition: 'middle',
   legendOffset: -50,
-  itemTextColor: "var(--title-color)",
 };
 
 const theme = {
   fontSize: "12px",
-  textColor: 'var(--title-color)',
+  textColor: 'var(--chart-color)',
   grid: {
     line: {
       stroke: "var(--icon-color)"
@@ -43,7 +42,7 @@ const legends = [
     itemHeight: 20,
     itemDirection: "left-to-right",
     itemOpacity: 0.85,
-    itemTextColor: "var(--title-color)",
+    itemTextColor: "var(--chart-color)",
     symbolSize: 20,
     effects: [
       {
@@ -72,7 +71,6 @@ export const BarChart = ({ data }) => {
       indexBy="country"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
-      arcLinkLabelsTextColor="var(--title-color)"
       colors={{ scheme: 'nivo' }}
       defs={[
         {

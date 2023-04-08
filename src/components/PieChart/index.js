@@ -2,8 +2,8 @@ import { ResponsivePie } from '@nivo/pie'
 import './styles.css';
 
 const theme = {
-  fontSize: "16px",
-  textColor: 'var(--title-color)',
+  fontSize: "12px",
+  textColor: 'var(--chart-color)',
 };
 
 export const PieChart = ({ data }) => {
@@ -107,12 +107,12 @@ export const PieChart = ({ data }) => {
           translateX: 0,
           translateY: 56,
           itemsSpacing: 0,
-          itemWidth: 100,
+          itemWidth: 70,
           itemHeight: 18,
-          itemTextColor: 'var(--title-color)',
+          itemTextColor: 'var(--chart-color)',
           itemDirection: 'left-to-right',
           itemOpacity: 1,
-          symbolSize: 18,
+          symbolSize: 14,
           symbolShape: 'circle',
           effects: [
             {
