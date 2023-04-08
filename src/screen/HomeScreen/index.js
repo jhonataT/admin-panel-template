@@ -27,7 +27,7 @@ export const HomeScreen = ({ links }) => {
               const IconComponent = Icons[link?.icon] || Icons["BsCodeSlash"];
 
               return <div className="link__content">
-                <IconComponent size={24} />
+                <IconComponent size={24} color="var(--chart-color)"/>
                 <Link
                   label={link?.title}
                   to={link?.to}
