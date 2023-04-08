@@ -2,8 +2,8 @@ import { IoNotificationsSharp, IoSettings } from 'react-icons/io5';
 import { Badge } from '@mui/material';
 import { UserProfile } from '../UserProfile';
 import userImage from '../../assets/images/login-image.jpg';
-import './styles.css';
 import { ToggleThemeMode } from '../Toggle';
+import './styles.css';
 
 export const CustomHeader = ({ title }) => {
     return <header className="header__container">

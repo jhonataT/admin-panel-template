@@ -22,7 +22,6 @@
     --text-hover-color: #ffffff;
     
     background-color: var(--default-background);
-    color: var(--title-color);
 }
 
 :root .dark-theme {
@@ -37,7 +36,6 @@
     --title-color: #ffffff;
 
     background-color: var(--default-background);
-    color: var(--title-color);
 }
 
 body {
@@ -46,6 +44,8 @@ body {
 
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
+
+    color: #2a2e36;
 }
 
 a {

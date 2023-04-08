@@ -1,0 +1,32 @@
+[
+    {
+      "id": "css",
+      "label": "css",
+      "value": 138,
+      "color": "hsl(46, 70%, 50%)"
+    },
+    {
+      "id": "scala",
+      "label": "scala",
+      "value": 502,
+      "color": "hsl(225, 70%, 50%)"
+    },
+    {
+      "id": "php",
+      "label": "php",
+      "value": 56,
+      "color": "hsl(358, 70%, 50%)"
+    },
+    {
+      "id": "sass",
+      "label": "sass",
+      "value": 289,
+      "color": "hsl(267, 70%, 50%)"
+    },
+    {
+      "id": "python",
+      "label": "python",
+      "value": 550,
+      "color": "hsl(220, 70%, 50%)"
+    }
+  ]

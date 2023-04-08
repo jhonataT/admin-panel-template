@@ -1,39 +1,28 @@
 import { Grid } from '@mui/material';
 import { Card } from '../../components/Card';
 import { Charts } from '../../components/Charts';
+import barData from '../../core/mocks/MOCK_BAR_CHART.json';
+import pieData from '../../core/mocks/MOCK_PIE_CHART.json';
 import './styles.css';
 
 export const DashboardScreen = () => {
+
+    console.log("DATA", barData)
     return <div className="dashboard__container">
-        <Grid container spacing={2.5} padding={3}>
-            <Grid item xs={6}>
+        <Grid container spacing={2}>
+            <Grid item xs="12">
                 <Card>
-                    <Charts type="bar"/>
+                    <Charts data={barData} type="bar"/>
                 </Card>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs="6">
                 <Card>
-                    <Charts type="area"/>
+                    <Charts data={pieData} type="pie"/>
                 </Card>
             </Grid>
-            <Grid item xs={6}>
-                <Card flex >
-                    <Charts type="donut"/>
-                </Card>
-            </Grid>
-            <Grid item xs={6}>
+            <Grid item xs="6">
                 <Card>
-                    <Charts type="pie"/>
-                </Card>
-            </Grid>
-            <Grid item xs={12}>
-                <Card>
-                    <Charts type="multi-bar"/>
-                </Card>
-            </Grid>
-            <Grid item xs={12}>
-                <Card>
-                    <Charts type="radar"/>
+                    <Charts data={pieData} type="pie"/>
                 </Card>
             </Grid>
         </Grid>
