@@ -12,12 +12,12 @@ export const PieChart = ({ data }) => {
       data={data}
       theme={theme}
       margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-      innerRadius={0.5}
+      innerRadius={0.1}
       padAngle={0.7}
-      cornerRadius={3}
-      activeOuterRadiusOffset={8}
+      cornerRadius={6}
+      activeOuterRadiusOffset={15}
       arcLinkLabelsSkipAngle={10}
-      arcLinkLabelsThickness={2}
+      arcLinkLabelsThickness={3}
       arcLinkLabelsColor={{ from: 'color' }}
       arcLabelsSkipAngle={10}
       arcLabelsTextColor={{
@@ -105,10 +105,10 @@ export const PieChart = ({ data }) => {
           direction: 'row',
           justify: false,
           translateX: 0,
-          translateY: 56,
-          itemsSpacing: 0,
+          translateY: 50,
+          itemsSpacing: 20,
           itemWidth: 70,
-          itemHeight: 18,
+          itemHeight: 28,
           itemTextColor: 'var(--chart-color)',
           itemDirection: 'left-to-right',
           itemOpacity: 1,

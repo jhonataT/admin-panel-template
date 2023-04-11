@@ -2,7 +2,7 @@ import { Avatar, Typography } from "@mui/material";
 import { stringAvatar } from "../../core/utils/avatar";
 import './styles.css';
 
-export const UserProfile = ({ userName = 'usuário', userImage }) => {
+export const UserProfile = ({ userName = '', userImage }) => {
 
     if(userImage) {
         return <div className="user-profile__container">

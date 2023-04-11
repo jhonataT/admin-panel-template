@@ -29,15 +29,20 @@ const Item = ({ route, rootPath }) => {
   </MenuItem>
 }
 
-export const CustomSidebar = () => {
+export const CustomSidebar = ({ setSidebarCollapsed }) => {
   const { collapseSidebar, collapsed } = useProSidebar();
+
+  const toggleCollapsed = () => {
+    setSidebarCollapsed(!collapsed);
+    collapseSidebar(!collapsed);
+  }
 
     return <div className="sidebar__container">
       <Box className="sidebar-header__container">
         <RxHamburgerMenu
           size={36}
           className="sidebar-header--icon"
-          onClick={() => collapseSidebar(!collapsed)}
+          onClick={toggleCollapsed}
         />
       </Box>
       <Sidebar

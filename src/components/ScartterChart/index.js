@@ -9,7 +9,7 @@ const theme = {
         stroke: "var(--icon-color)"
       }
     }
-  };
+};
 
 export const ScatterChart = ({ data }) => {
     return <div className="scatter-chart__container">

@@ -56,6 +56,7 @@ const legends = [
 ];
 
 export const BarChart = ({ data }) => {
+  console.log("DFATA", data)
   return <div className="bar-chart__container">
     <ResponsiveBar
       data={data}
