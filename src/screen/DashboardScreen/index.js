@@ -51,9 +51,7 @@ export const DashboardScreen = ({ currentChart, chartOptions, toggleChart }) => 
             </Grid>
             <Grid item xs="12">
                 <Card style={{ padding: "50px 0", marginBottom: '20px' }}>
-                    <div className="dashboard-charts__container">
-                        <DefaultTable {...{data}} />
-                    </div>
+                    <DefaultTable {...{data}} />
                 </Card>
             </Grid>
         </Grid>
