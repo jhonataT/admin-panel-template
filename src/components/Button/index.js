@@ -7,7 +7,8 @@ export const DefaultButton = ({
     type = "contained",
     color="success",
     fullWidth = true,
-    size
+    size,
+    disabled
 }) => {
     return <Button
         className="button__container"
@@ -16,6 +17,7 @@ export const DefaultButton = ({
         onClick={handleClick}
         color={color}
         size={size}
+        disabled={disabled}
     >
         {label}
     </Button>

@@ -12,7 +12,8 @@ export const UsersScreen = ({ data }) => {
     onClick: () => navigate('/users/new'),
     type: 'contained',
     color: "primary",
-    fullWidth: false
+    fullWidth: false,
+    disabled: true
   }];
 
   return <div className="users__container">

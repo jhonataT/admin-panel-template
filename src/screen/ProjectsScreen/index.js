@@ -12,7 +12,8 @@ export const ProjectsScreen = ({data}) => {
     onClick: () => navigate('/projects/new'),
     type: 'contained',
     color: "primary",
-    fullWidth: false
+    fullWidth: false,
+    disabled: true
   }]
 
   return <div className="projects__container">
