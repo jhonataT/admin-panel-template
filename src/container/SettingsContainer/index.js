@@ -5,26 +5,17 @@ const settingOptions = [
         step: "Configurações do Usuário",
         children: [
             {
-                label: "Salvar login",
-                onToggle: () => console.log("AA"),
-                defaultChecked: false
-            },
-            {
-                label: "Mostrar notificações",
-                onToggle: () => console.log("AA"),
-                defaultChecked: true
-            }
-        ]
-    },
-    {
-        step: "Configurações de Layout",
-        children: [
-            {
-                label: "Tema light",
+                label: "Manter logado",
                 onToggle: () => console.log("AA"),
                 defaultChecked: true,
                 disabled: true
             },
+            {
+                label: "Mostrar notificações",
+                onToggle: () => console.log("AA"),
+                defaultChecked: true,
+                disabled: true
+            }
         ]
     }
 ]

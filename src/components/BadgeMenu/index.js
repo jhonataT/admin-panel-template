@@ -31,7 +31,9 @@ export const BadgeMenu = ({ title = "", children, data }) => {
             <Typography className="menu__content title">Notificações</Typography>
             {
                 Array.isArray(data) && data.map(notif => (
-                    <Typography className="menu__content">{notif?.title}</Typography>
+                    <Typography key={notif?.title} className="menu__content">
+                        {notif?.title}
+                    </Typography>
                 ))
             }
         </Popover>

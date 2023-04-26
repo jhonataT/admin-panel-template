@@ -1,7 +1,14 @@
 import { ProjectsScreen } from "../../screen/ProjectsScreen"
-import MOCK_PROJECTS_DATA from "../..//core/mocks/MOCK_PROJECTS_DATA.json"
-
+import { useEffect, useState } from "react";
+import { Api } from "../../core/communication";
 
 export const ProjectsContainer = () => {
-  return <ProjectsScreen data={MOCK_PROJECTS_DATA} />
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    Api().get('/api/projects')
+    .then(response => setProjects(response?.data || []));
+  }, [])
+
+  return <ProjectsScreen data={projects || []} />
 }

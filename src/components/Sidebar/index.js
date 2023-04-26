@@ -79,13 +79,13 @@ export const CustomSidebar = ({ setSidebarCollapsed }) => {
           }}
         >
           <Box>
-            { 
-              Array.isArray(itemList) && 
+            {Array.isArray(itemList) && 
                 itemList.map(item => {
                 if(!item?.hidden) {
                   let rootPath = item.path.split('/')[1] || '';
-                  return <Item route={item} rootPath={rootPath}/>
+                  return <Item key={item?.path} route={item} rootPath={rootPath}/>
                 }
+                return <></>
               })
             }
           </Box>

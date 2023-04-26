@@ -7,6 +7,7 @@ export const SubHeader = ({ buttons }) => {
             {
                 Array.isArray(buttons) && buttons.map(button => (
                     <DefaultButton
+                        key={button?.title}
                         disabled={button?.disabled}
                         label={button.title}
                         handleClick={button.onClick}

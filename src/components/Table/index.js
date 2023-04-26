@@ -1,4 +1,5 @@
 import GridTable from '@nadavshaar/react-grid-table';
+import { Skeleton } from '@mui/material';
 import './styles.css';
 
 const props = {
@@ -26,10 +27,14 @@ export const DefaultTable = ({ data }) => {
     )
 
     return <div className='table__container'>
-        <GridTable
-            texts={props}
-            columns={getColumns(data)}
-            rows={data}
-        />
+        {
+            (data && data.length) ?  (
+                <GridTable
+                    texts={props}
+                    columns={data.length ? getColumns(data) : []}
+                    rows={data}
+                />
+            ) : <Skeleton variant="rectangular" width='100%' height='70%'/> 
+        }
     </div>
 }
